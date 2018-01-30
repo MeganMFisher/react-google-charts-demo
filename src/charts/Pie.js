@@ -1,26 +1,29 @@
 import { Chart } from 'react-google-charts';
 import React, {Component} from 'react';
  
-class Area extends Component {
+class Pie extends Component {
   constructor(props) {
     super(props);
     this.state = {
       options: {
-        title: 'Age vs. Weight comparison',
-        hAxis: { title: 'Age', minValue: 0, maxValue: 15 },
-        vAxis: { title: 'Weight', minValue: 0, maxValue: 15 },
+        title: 'Lunch Options',
         legend: 'none',
       },
-      data: [["Year","Sales","Expenses"],["2013",1000,400],["2014",1170,460],["2015",660,1120],["2016",1030,540]],
+      data: [
+        ['Option', 'Percentage'],
+        ['CPK', 12],
+        ['Red Robin', 5.5],
+
+      ],
     };
   }
   render() {
     return (
       <Chart
-        chartType="AreaChart"
+        chartType="PieChart"
         data={this.state.data}
         options={this.state.options}
-        graph_id="AreaChart"
+        graph_id="PieChart"
         width="100%"
         height="400px"
         legend_toggle
@@ -28,4 +31,4 @@ class Area extends Component {
     );
   }
 }
-export default Area;
+export default Pie;

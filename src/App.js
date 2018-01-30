@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Bar from './Bar';
-import Scatter from './Scatter';
-import Pie from './Pie';
-import Area from './Area';
+import Bar from './charts/Bar';
+import Scatter from './charts/Scatter';
+import Pie from './charts/Pie';
+import Area from './charts/Area';
+import Histogram from './charts/Histogram';
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
         <Scatter/>
         <Pie/>
         <Area/>
+        <Histogram/>
       </div>
     );
   }
