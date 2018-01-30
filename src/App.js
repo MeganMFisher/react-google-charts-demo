@@ -4,6 +4,7 @@ import Scatter from './charts/Scatter';
 import Pie from './charts/Pie';
 import Area from './charts/Area';
 import Histogram from './charts/Histogram';
+import Line from './charts/Line';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <Pie/>
         <Area/>
         <Histogram/>
+        <Line/>
       </div>
     );
   }
